@@ -107,6 +107,84 @@
     .macarons_grid_photo {
       width: 80%;
     }
+
+    .promotion_container {
+      background-color: #cfe0a4;
+      padding: 10px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .promotion_container a {
+      text-decoration: none;
+      color: rgb(53, 148, 126);
+    }
+
+    .details_paragraph {
+      font-size: 10px;
+
+    }
+
+    .closing_container {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      
+    }
+
+    .closing_container_1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    .closing_container_1 a {
+      text-decoration: none;
+      color: white;
+    }
+    
+    .closing_container_1_logo {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30%;
+      padding: 5px 0px;
+    }
+    
+    .closing_container_1_logo a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .closing_container_1_logo_img {
+      width: 50%;
+    }
+
+    .contact_paragraph {
+      font-size: 12px;
+    }
+    
+    .contact_paragraph.email {
+      text-decoration: underline;
+    }
+
+    .closing_container_2 {
+      display: flex;
+      justify-content: end;
+      text-align: right;
+    }
+
+    .closing_container_2 p {
+      width: 70%;
+      font-size: 12px;
+    }
+
+    .unsubscribe_paragraph {
+      text-align: end;
+      font-size: 8px;
+    }
   
   </style>
   <title>Newsletter</title>
@@ -160,13 +238,52 @@
 
   <div class="macarons_div">
     <a class="macarons_grid_link" href="https://www.alaricflowers.com/products/macarons?_pos=2&_sid=827198882&_ss=r" target="_blank">
-      <img class="macarons_grid_photo" src="https://i.postimg.cc/TYbqWrZx/Macaron-Cafe-Small-Classic-Box-Manhattan.jpg" alt="">
+      <img class="macarons_grid_photo" src="https://i.postimg.cc/vmG5xCsF/Macaron-Cafe-Small-Classic-Box-Manhattan-rectangle.jpg" alt="">
     </a>
 
     <p>
       When you purchase any of our flower arrangements for the season, we'll include a complimentary box of our delightful assortment of macarons as our heartfelt gift to you.*
     </p>
+  </div>
 
+  <div class="promotion_container">
+    <p>* Add a flower arrangement over $249 and a box of <a href="https://www.alaricflowers.com/products/macarons?_pos=2&_sid=827198882&_ss=r" target="_blank">Macarons</a> to a cart. Use the discount code at the checkout to get a box of macarons for free.</p>
+    <p>Code: <strong>N11GGT2NAWPC</strong> at checkout.</p>
+    <p class="details_paragraph">Details: The offer is valid from 00:00am EST 12/14/2023 through 6:00pm EST 12/24/2023.</p>
+  </div>
+
+
+  <div class="closing_container">
+    <div class="closing_container_1">
+      <div>
+        <a href="https://www.alaricflowers.com/" target="_blank">
+          <h3>Alaric Flower Design</h3>
+        </a>
+        
+        <p class="contact_paragraph">74 W 68th St #1A, New York, NY 10023</p>
+        <a class="contact_paragraph_link" href="mailto:info@alaricflowers.com">
+          <p class="contact_paragraph email">info@alaricflowers.com</p>
+        </a>
+
+        <p class="contact_paragraph">(212) 308-3794</p>
+      </div>
+
+      <div class="closing_container_1_logo">
+        <a href="">
+          <img class="closing_container_1_logo_img" src="https://i.postimg.cc/28K84NbY/logo.png" alt="">
+        </a>
+      </div>     
+      
+    </div>
+    <hr>
+    <div class="closing_container_2">
+      <p>© 2023 Alaric Flowers - Orchids, Flowers, Champagne, Wine Delivery by New York City florist.</p>
+    </div>
+
+    <p class="unsubscribe_paragraph">
+      {{ open_tracking_block }}
+      {{ unsubscribe_link }}
+    </p>
   </div>
 
   
