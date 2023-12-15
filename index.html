@@ -10,23 +10,18 @@
       margin: 0 auto;
       font-family: Arial, sans-serif;
       width: 600px;
-      /* justify-content: center; */
     }
 
     .black_rectangle {
       background-color: #000;
-      height: 30px; 
-    }
-
-    .logo_container {
-      background-color: white;
-      /* background-color: red; */
+      height: 35px; 
     }
 
     .logo_container_link {
       display: flex;
       justify-content: center;
-      /* align-items: center; */
+      background-color: white;
+      align-items: center;
     }
 
     .logo {
@@ -38,13 +33,17 @@
     }
 
     .button_container {
+      background-color: #000;
+      height: 35px; 
       display: flex;
       justify-content: space-around;
+      align-items: center;
     }
 
     .button_container a {
       text-decoration: none;
       color: white;
+      display: flex;
       align-items: center;
       padding: 5px 10px;
       border: 1px solid black;
@@ -70,8 +69,8 @@
     .message {
       background-color: black;
       color: white;
-      /* margin: 0; */
-      padding: 10px;
+      margin: -5px 0 0 0;
+      padding: 15px 10px 10px 10px;
       text-align: center;
       font-weight: bold;
       font-size: 16px;
@@ -79,7 +78,8 @@
 
     .flowers_grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      /* grid-template-columns: repeat(3, 1fr); */
+      grid-template-columns: 1fr 1fr 1fr;
       background-color: black;
       text-align: center;
       padding: 10px;
@@ -143,11 +143,11 @@
       color: white;
     }
     
-    .closing_container_1_logo {
-      background-color: white;
+    .closing_container_1_logo_link {
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: white;
       height: 30%;
       padding: 5px 0px;
     }
@@ -192,22 +192,19 @@
 <body>
   <div class="black_rectangle"></div>
 
-  <div class="logo_container">
-    <a class="logo_container_link" href="https://www.alaricflowers.com/" target="_blank">
-      <img class="logo" src="https://i.postimg.cc/RZTkmc70/logo-large.png" alt="Alaric Flower Design web page">
-    </a>
-  </div>
+  <a class="logo_container_link" href="https://www.alaricflowers.com/" target="_blank">
+    <img class="logo" src="https://i.postimg.cc/RZTkmc70/logo-large.png" alt="Alaric Flower Design web page">
+  </a>
 
-  <div class="black_rectangle">
-    <div class="button_container">
+  <div class="button_container">
       <a href="https://www.alaricflowers.com/" target="_blank">SHOP</a>
       <a>(212) 308-3794</a>
-    </div>
   </div>
 
   <a class="flowers_link" href="https://www.alaricflowers.com/products/untitled-dec9_21-31?_pos=1&_sid=5cf2eefb9&_ss=r" target="_blank">
     <img class="flowers" src="https://i.postimg.cc/L5kXj2QD/Ruby.png" alt="Ruby Glow">
   </a>
+  
 
   <div class="message">
     As the holiday season approaches, we wanted to take a moment to send our warmest wishes your way. We hope your holiday is filled with love, laughter, and all the wonderful things this season brings.
@@ -268,11 +265,9 @@
         <p class="contact_paragraph">(212) 308-3794</p>
       </div>
 
-      <div class="closing_container_1_logo">
-        <a href="">
-          <img class="closing_container_1_logo_img" src="https://i.postimg.cc/28K84NbY/logo.png" alt="">
-        </a>
-      </div>     
+      <a class="closing_container_1_logo_link" href="https://www.alaricflowers.com/">
+        <img class="closing_container_1_logo_img" src="https://i.postimg.cc/28K84NbY/logo.png" alt="">
+      </a>
       
     </div>
     <hr>
