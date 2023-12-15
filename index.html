@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport"> -->
   <!-- <link rel="stylesheet" type="text/css" href="styles.css" />  -->
   <style>
     body {
@@ -15,50 +16,57 @@
     .black_rectangle {
       background-color: #000;
       height: 35px; 
+      width: 100%;
     }
 
-    .logo_container_link {
-      display: flex;
-      justify-content: center;
+    .logo_container {
       background-color: white;
-      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+
+    .logo_container tr {
+      text-align: center;
+    }
+
+    .logo_container td {
+      text-align: center;
     }
 
     .logo {
-      width: 75%;
-    }
-
-    .logo:hover {
-      cursor: pointer;
+      width: 25%;
     }
 
     .button_container {
       background-color: #000;
       height: 35px; 
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .button_container td {
+      padding: 10px; 
+      text-align: center;
+      width: 50%;
     }
 
     .button_container a {
-      text-decoration: none;
-      color: white;
-      display: flex;
-      align-items: center;
-      padding: 5px 10px;
-      border: 1px solid black;
-      transition: background-color 0.1s, color 0.3s;
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+        border: 1px solid black;
+        transition: background-color 0.1s, color 0.3s;
     }
 
-    .button_container a:hover {
-      border-radius: 5px;
-      background-color: white;
-      color: black;
+    .button_container_link_shop:hover {
+        border-radius: 5px;
+        background-color: white;
+        color: black;
     }
 
-    /* .flowers_link {
-      margin: 0 0 0 0;
-    } */
+    .flowers_link {
+      margin: 0;
+    }
 
     .flowers {
       width: 100%;
@@ -66,45 +74,63 @@
       padding: 0;
     }
 
-    .message {
+    .message_container {
+      background-color: black;
+      margin: -5px 0 0 0;
+      width: 100%;
+    }
+    
+    .message_container td {
       background-color: black;
       color: white;
       margin: -5px 0 0 0;
-      padding: 15px 10px 10px 10px;
+      padding: 15px 60px 10px 60px;
       text-align: center;
       font-weight: bold;
       font-size: 16px;
     }
-
+    
     .flowers_grid {
-      display: grid;
-      /* grid-template-columns: repeat(3, 1fr); */
-      grid-template-columns: 1fr 1fr 1fr;
       background-color: black;
-      text-align: center;
-      padding: 10px;
+      width: 100%;
+      margin: auto;
+      border: none;
     }
 
     .flowers_grid_photo {
       width: 80%;
       transition: background-color 0.1s, color 0.3s;
-
     }
 
-    .flowers_grid_photo:hover {
-      border: white;
+    .flowers_grid td {
+      padding: 8px;
+      text-align: center; 
+      width: 33%
     }
 
-    .macarons_div {
+    .flowers_grid_photo {
+      height: auto;
+      max-width: 100%;
+    }
+
+    .macarons_container {
       background-color: white;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
       text-align: center;
-      /* padding: 10px; */
-      align-items: center;
+      padding: 10px;
     }
 
-    .macarons_grid_photo {
+    .macarons_container tr {
+      text-align: center;
+    }
+
+    .macarons_container td {
+      text-align: center;
+      width: 50%;
+    }
+
+
+    .macarons_container_photo {
       width: 80%;
     }
 
@@ -113,6 +139,7 @@
       padding: 10px 20px;
       color: white;
       text-align: center;
+      font-size: 16px;
     }
 
     .promotion_container a {
@@ -122,126 +149,147 @@
 
     .details_paragraph {
       font-size: 10px;
-
     }
 
     .closing_container {
       background-color: black;
       color: white;
       padding: 20px;
-      
-    }
+      width: 100%;      
+    }    
 
-    .closing_container_1 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      align-items: center;
-    }
-
-    .closing_container_1 a {
+    .closing_container a {
       text-decoration: none;
       color: white;
     }
-    
-    .closing_container_1_logo_link {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: white;
-      height: 30%;
-      padding: 5px 0px;
-    }
-    
-    .closing_container_1_logo a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
+    .closing_container p{
+      font-size: 14px;
     }
 
+    .closing_container_td{
+      width: 50%;  
+    }  
+    
+    .closing_container_td.right {
+      /* background-color: white; */
+      text-align: center;    
+      background-color: white;
+    }  
+   
     .closing_container_1_logo_img {
       width: 50%;
+      /* height: auto; */
     }
 
-    .contact_paragraph {
-      font-size: 12px;
-    }
-    
-    .contact_paragraph.email {
-      text-decoration: underline;
+    .divider {
+      width: 75%;
+      height: 1px;
+      background-color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+
     }
 
-    .closing_container_2 {
+    .unsubscribe_container {
+      background-color: black;
+      width: 100%;
+      padding: 10px;
+    }
+
+    .unsubscribe_container p {
       display: flex;
       justify-content: end;
-      text-align: right;
+      color: white;
+      font-size: 10px;
     }
 
-    .closing_container_2 p {
-      width: 70%;
-      font-size: 12px;
-    }
-
-    .unsubscribe_paragraph {
+    .unsubscribe_paragraph_unsubscribe{
       text-align: end;
       font-size: 8px;
+
     }
   
   </style>
   <title>Newsletter</title>
 </head>
 <body>
-  <div class="black_rectangle"></div>
+  <table class="black_rectangle"></table>
 
-  <a class="logo_container_link" href="https://www.alaricflowers.com/" target="_blank">
-    <img class="logo" src="https://i.postimg.cc/RZTkmc70/logo-large.png" alt="Alaric Flower Design web page">
-  </a>
+  <table class="logo_container">
+    <tr>
+      <td>
+        <a class="logo_container_link" href="https://www.alaricflowers.com/" target="_blank">
+          <img class="logo" src="https://i.postimg.cc/RZTkmc70/logo-large.png" alt="Alaric Flower Design web page">
+        </a>      
+      </td>
+    </tr>
+  </table>
 
-  <div class="button_container">
-      <a href="https://www.alaricflowers.com/" target="_blank">SHOP</a>
-      <a>(212) 308-3794</a>
-  </div>
+
+  <table class="button_container">
+    <tr>
+      <td><a class="button_container_link_shop" href="https://www.alaricflowers.com/" target="_blank">SHOP</a></td>
+      <td><a>(212) 308-3794</a></td>
+    </tr>      
+  </table>
 
   <a class="flowers_link" href="https://www.alaricflowers.com/products/untitled-dec9_21-31?_pos=1&_sid=5cf2eefb9&_ss=r" target="_blank">
-    <img class="flowers" src="https://i.postimg.cc/L5kXj2QD/Ruby.png" alt="Ruby Glow">
+    <img class="flowers" src="https://i.postimg.cc/g24ZDdhD/Ruby-centered.png" alt="Ruby Glow">
   </a>
   
 
-  <div class="message">
-    As the holiday season approaches, we wanted to take a moment to send our warmest wishes your way. We hope your holiday is filled with love, laughter, and all the wonderful things this season brings.
-  </div>
+  <table class="message_container">
+    <td>As the holiday season approaches, we wanted to take a moment to send our warmest wishes your way. We hope your holiday is filled with love, laughter, and all the wonderful things this season brings.</td>
+  </table>
 
-  <div class="flowers_grid">
-    <a class="flowers_grid_link" href="https://www.alaricflowers.com/collections/new-york-buy-send-flowers-orchids-delivery-gourmet-gifts-baby-baskets/products/for-my-valentine" target="_blank">
-      <img class="flowers_grid_photo" src="https://i.postimg.cc/4dHDjB6H/Tosca-gift-box-black.jpg" alt="">
-    </a>
+  <table class="flowers_grid">
+    <tr>
+      <td>
+        <a class="flowers_grid_link" href="https://www.alaricflowers.com/collections/new-york-buy-send-flowers-orchids-delivery-gourmet-gifts-baby-baskets/products/for-my-valentine" target="_blank">
+          <img class="flowers_grid_photo" src="https://i.postimg.cc/4dHDjB6H/Tosca-gift-box-black.jpg" alt="">
+        </a>
+      </td>
 
-    <a class="flowers_grid_link" href="https://www.alaricflowers.com/" target="_blank">
-      <img class="flowers_grid_photo" src="https://i.postimg.cc/7YdMP4TR/new-year-arrangement.png" alt="">
-    </a>
+      <td>
+        <a class="flowers_grid_link" href="https://www.alaricflowers.com/" target="_blank">
+          <img class="flowers_grid_photo" src="https://i.postimg.cc/7YdMP4TR/new-year-arrangement.png" alt="">
+        </a>
+      </td>
 
-    <a class="flowers_grid_link" href="https://www.alaricflowers.com/collections/new-york-florist-flower-delivery-manhattan-nyc/products/gabriela" target="_blank">
-      <img class="flowers_grid_photo" src="https://i.postimg.cc/VvZm8dSd/Gabriela.jpg" alt="">
-    </a>
+      <td>
+        <a class="flowers_grid_link" href="https://www.alaricflowers.com/collections/new-york-florist-flower-delivery-manhattan-nyc/products/gabriela" target="_blank">
+          <img class="flowers_grid_photo" src="https://i.postimg.cc/VvZm8dSd/Gabriela.jpg" alt="">
+        </a>
+      </td>
+    </tr>
+  </table>
 
-  </div>
-
-  <div class="message">
-    We have an offer just for you!
-  </div>
+  <table class="message_container">
+    <td>We have an offer just for you!</td>
+  </table>
 
   <a class="flowers_link" href="https://www.alaricflowers.com/products/berry-bloom?_pos=1&_sid=e9a76f754&_ss=r" target="_blank">
     <img class="flowers" src="https://i.postimg.cc/SRx9GSnm/Berry-Bloom-with-text1920-x-1080.png" alt="">
   </a>
 
-  <div class="macarons_div">
-    <a class="macarons_grid_link" href="https://www.alaricflowers.com/products/macarons?_pos=2&_sid=827198882&_ss=r" target="_blank">
-      <img class="macarons_grid_photo" src="https://i.postimg.cc/vmG5xCsF/Macaron-Cafe-Small-Classic-Box-Manhattan-rectangle.jpg" alt="">
-    </a>
+  <table class="macarons_container">
+    <tr>
+      <td>
+        <a class="macarons_container_link" href="https://www.alaricflowers.com/products/macarons?_pos=2&_sid=827198882&_ss=r" target="_blank">
+          <img class="macarons_container_photo" src="https://i.postimg.cc/vmG5xCsF/Macaron-Cafe-Small-Classic-Box-Manhattan-rectangle.jpg" alt="">
+        </a>
+      </td>
 
-    <p>
-      When you purchase any of our flower arrangements for the season, we'll include a complimentary box of our delightful assortment of macarons as our heartfelt gift to you.*
-    </p>
-  </div>
+      <td>
+        <p>
+          When you purchase any of our flower arrangements for the season, we'll include a complimentary box of our delightful assortment of macarons as our heartfelt gift to you.*
+        </p>
+      </td>
+    </tr>
+
+  </table>
 
   <div class="promotion_container">
     <p>* Add a flower arrangement over $249 and a box of <a href="https://www.alaricflowers.com/products/macarons?_pos=2&_sid=827198882&_ss=r" target="_blank">Macarons</a> to a cart. Use the discount code at the checkout to get a box of macarons for free.</p>
@@ -250,36 +298,50 @@
   </div>
 
 
-  <div class="closing_container">
-    <div class="closing_container_1">
-      <div>
+  <table class="closing_container">
+
+    <tr>
+      <td class="closing_container_td" rowspan="4">
         <a href="https://www.alaricflowers.com/" target="_blank">
           <h3>Alaric Flower Design</h3>
         </a>
-        
+
         <p class="contact_paragraph">74 W 68th St #1A, New York, NY 10023</p>
+        
         <a class="contact_paragraph_link" href="mailto:info@alaricflowers.com">
           <p class="contact_paragraph email">info@alaricflowers.com</p>
         </a>
 
         <p class="contact_paragraph">(212) 308-3794</p>
-      </div>
+      </td>
 
-      <a class="closing_container_1_logo_link" href="https://www.alaricflowers.com/">
-        <img class="closing_container_1_logo_img" src="https://i.postimg.cc/28K84NbY/logo.png" alt="">
-      </a>
-      
-    </div>
-    <hr>
-    <div class="closing_container_2">
-      <p>© 2023 Alaric Flowers - Orchids, Flowers, Champagne, Wine Delivery by New York City florist.</p>
-    </div>
+      <td class="closing_container_td right" rowspan="4">
+        <a class="closing_container_1_logo_link" href="https://www.alaricflowers.com/">
+          <img class="closing_container_1_logo_img" src="https://i.postimg.cc/28K84NbY/logo.png" alt="">
+        </a>
+      </td>
+    </tr>
+  </table>
+  
+  <table class="divider"></table>
 
-    <p class="unsubscribe_paragraph">
-      {{ open_tracking_block }}
-      {{ unsubscribe_link }}
-    </p>
-  </div>
+  <table class="unsubscribe_container"> 
+    <tr>
+      <td>
+        <p>© 2023 Alaric Flowers - Orchids, Flowers, Champagne, Wine Delivery by New York City florist.</p>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="unsubscribe_paragraph">
+          {{ open_tracking_block }}
+          {{ unsubscribe_link }}
+        </p>
+      </td>
+    </tr>
+  </table>
+
 
   
 </body>
