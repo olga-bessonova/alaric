@@ -1,0 +1,50 @@
+body {
+  padding: 0; 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  width: 600px;
+}
+
+.black_rectangle {
+  background-color: #000;
+  height: 30px; 
+}
+
+.logo_container_link {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.logo {
+  width: 75%;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.button_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button_container a {
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid black;
+  transition: background-color 0.1s, color 0.3s;
+}
+
+.button_container a:hover {
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.flowers {
+  width: 100%;
+}
+
