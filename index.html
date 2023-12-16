@@ -55,29 +55,34 @@
         color: white;
         padding: 5px 10px;
         border: 1px solid black;
-        transition: background-color 0.1s, color 0.3s;
+        transition: all 0.5s ease-in-out;
     }
 
     .button_container_link_shop:hover {
         border-radius: 5px;
         background-color: white;
         color: black;
+        /* transform: scale(1.5); */
     }
 
-    .flowers_link {
-      margin: 0;
+    .rubyglow_container {
+      background-color: black;
+      width: 100%;
+      margin: auto;
+      border: none;
     }
 
     .flowers {
       width: 100%;
-      margin: 0;
-      padding: 0;
+      /* margin: 0; */
+      /* padding: 0; */
     }
 
     .message_container {
       background-color: black;
-      margin: -5px 0 0 0;
+      margin: 0px 0 0 0;
       width: 100%;
+      padding: 15px 0 15px 0;
     }
     
     .message_container td {
@@ -97,11 +102,6 @@
       border: none;
     }
 
-    .flowers_grid_photo {
-      width: 80%;
-      transition: background-color 0.1s, color 0.3s;
-    }
-
     .flowers_grid td {
       padding: 8px;
       text-align: center; 
@@ -109,8 +109,9 @@
     }
 
     .flowers_grid_photo {
-      height: auto;
-      max-width: 100%;
+      /* height: auto; */
+      /* max-width: 100%; */
+      width: 80%;
     }
 
     .macarons_container {
@@ -118,6 +119,8 @@
       width: 100%;
       text-align: center;
       padding: 10px;
+      /* font-weight: bold; */
+      font-weight: 600;
     }
 
     .macarons_container tr {
@@ -129,9 +132,9 @@
       width: 50%;
     }
 
-
     .macarons_container_photo {
       width: 80%;
+      transition: all 0.5s ease-in-out;
     }
 
     .promotion_container {
@@ -143,6 +146,12 @@
     }
 
     .promotion_container a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(53, 148, 126);
+    }
+
+    .promotion_container strong{
       text-decoration: none;
       color: rgb(53, 148, 126);
     }
@@ -195,20 +204,18 @@
     .unsubscribe_container {
       background-color: black;
       width: 100%;
-      padding: 10px;
+      padding: 10px 5px 10px 0px;
+      font-size: 12px;
+      color: white;
     }
 
     .unsubscribe_container p {
-      display: flex;
-      justify-content: end;
-      color: white;
-      font-size: 10px;
+      text-align: right;
     }
 
     .unsubscribe_paragraph_unsubscribe{
-      text-align: end;
-      font-size: 8px;
-
+      text-align: right;
+      font-size: 6px;
     }
   
   </style>
@@ -235,9 +242,15 @@
     </tr>      
   </table>
 
-  <a class="flowers_link" href="https://www.alaricflowers.com/products/untitled-dec9_21-31?_pos=1&_sid=5cf2eefb9&_ss=r" target="_blank">
-    <img class="flowers" src="https://i.postimg.cc/g24ZDdhD/Ruby-centered.png" alt="Ruby Glow">
-  </a>
+  <table class="rubyglow_container">
+    <tr>
+      <td>
+        <a class="rubyglow_container_link" href="https://www.alaricflowers.com/products/untitled-dec9_21-31?_pos=1&_sid=5cf2eefb9&_ss=r" target="_blank">
+          <img class="flowers" src="https://i.postimg.cc/g24ZDdhD/Ruby-centered.png" alt="Ruby Glow">
+        </a>
+      </td>
+  </table>
+
   
 
   <table class="message_container">
@@ -253,7 +266,7 @@
       </td>
 
       <td>
-        <a class="flowers_grid_link" href="https://www.alaricflowers.com/" target="_blank">
+        <a class="flowers_grid_link" href="https://www.alaricflowers.com/products/winter-harmony?_pos=1&_sid=809fa052b&_ss=r" target="_blank">
           <img class="flowers_grid_photo" src="https://i.postimg.cc/7YdMP4TR/new-year-arrangement.png" alt="">
         </a>
       </td>
@@ -294,7 +307,7 @@
   <div class="promotion_container">
     <p>* Add a flower arrangement over $249 and a box of <a href="https://www.alaricflowers.com/products/macarons?_pos=2&_sid=827198882&_ss=r" target="_blank">Macarons</a> to a cart. Use the discount code at the checkout to get a box of macarons for free.</p>
     <p>Code: <strong>N11GGT2NAWPC</strong> at checkout.</p>
-    <p class="details_paragraph">Details: The offer is valid from 00:00am EST 12/14/2023 through 6:00pm EST 12/24/2023.</p>
+    <p class="details_paragraph">Details: The offer is valid from 08:00am EST 12/16/2023 through 06:00pm EST 12/24/2023.</p>
   </div>
 
 
